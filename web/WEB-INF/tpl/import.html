@@ -1,0 +1,29 @@
+<#import "home.html" as com>
+<#escape x as x?html>
+<@com.page title="ROUNDS">
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>Select Sport</td>
+    <td><select name="listSports" id="listSports">
+    </select></td>
+    <td><input type="button" name="AddNewSport2" id="AddNewSport2" value="Select Sport"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td colspan="2" align="center">Add new round</td>
+  </tr>
+  <tr>
+    <td>Select file</td>
+    <td><input type="file" name="fileUpload" id="fileUpload" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="button" name="Import" id="Import" value="Import"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</@com.page>
+
+</#escape>

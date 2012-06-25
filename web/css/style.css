@@ -1,0 +1,217 @@
+body, html {
+	color:#000;
+	font-family: Arial,Verdana,sans-serif;
+	font-size: 100%;
+	top:0;
+	left: auto;
+	margin:0;
+	padding:0;
+	background-image: url(/PatOlympics/img/logo-po.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+        background-color:#fff;
+	}
+	
+#header {
+	height: 70px;
+	width: 1000px;
+        margin:0 auto;
+	}	
+
+	
+.round, .time {
+	/*border: 1px solid #fff;
+        border-width:0px 1px 1px 1px; */
+	width: 200px;
+	height: 60px;
+	float:left;
+	margin: 0 0 0 50px;
+	font-size: 130%;
+	text-transform:uppercase;
+	text-align:center;
+        color:#FFF;
+	background-color: #c06;
+        -moz-border-radius:0px 0px 15px 15px;
+        -moz-box-shadow:1px 2px 10px #ccc;
+text-shadow:1px 2px 5px #903;
+	}
+
+
+.time {
+        padding:0 20px;
+        min-width:455px;
+	}
+
+.round p, .time p {
+	margin:10px 0 0 0;
+	padding:0;
+	}
+
+.sbTicker {
+ -moz-border-radius:10px;
+        -moz-box-shadow:1px 2px 10px #ccc;
+background:-moz-linear-gradient(center top , #c06, #903);
+text-shadow:1px 2px 5px #300;
+color:#FFFFFF;
+font-size:24px;
+height:28px !important;
+margin-top:2em;
+padding:10px;
+width:976px !important; 
+}
+
+span.round_nr, span.time_nr {
+	font-size: 180%;
+	font-weight:bold;
+	}	
+
+div#content {
+  margin:0 auto;
+  width:1000px;
+}
+
+div#clr, div#ca {
+	margin: 0 0 0 5px;
+}
+
+	
+div#clr {
+	background-image: url(/PatOlympics/img/logo-clr.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 60px 0 10px 0;
+	margin: 00px 0 0 0;
+	}
+	
+div#ca {
+	background-image: url(/PatOlympics/img/logo-ca.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 30px 0 10px 0;
+	margin: 20px 0 0 0;
+	}
+
+
+	
+table {
+	width: 1000px;
+	border-collapse: seperate;
+	}
+		
+	
+table tr td{
+	border: 1px solid #fff;
+	border-bottom: 5px solid #fff;
+	height: 40px;
+        border:1px solid #FFFFFF;
+	}	
+	
+table.clr tr td {
+	background-image: url(/PatOlympics/img/bg_clr_td.gif);
+        -moz-box-shadow:1px 2px 10px #CCCCEE;
+	}
+
+
+	
+table.ca tr td {
+	background-image: url(/PatOlympics/img/bg_ca_td.gif);
+        -moz-box-shadow:1px 2px 10px #cdcbc0;
+	}	
+
+
+table.ca th.team, table.clr th.team {
+	background-image: url(/PatOlympics/img/team-back.png);
+	background-repeat:no-repeat;
+	height: 65px;
+	color:#cc0066;
+	font-size: 150%;
+	text-transform:uppercase;
+	margin:0;
+	line-height: 100%;
+	vertical-align:bottom;
+	padding: 34px 0 0 170px;
+	
+	}
+		
+table.ca th.referee, table.clr th.referee {
+	background-image: url(/PatOlympics/img/referee-back.png);
+	background-repeat:no-repeat;
+	height: 65px;
+	color:#cc0066;
+	font-size: 150%;
+	text-transform:uppercase;
+	margin:0;
+	line-height: 100%;
+	vertical-align:bottom;
+	padding: 34px 0 0 125px;	
+	}
+				
+table.ca th.referee_next, table.clr th.referee_next {
+	background-image: url(/PatOlympics/img/referee_next-back.png);
+	background-repeat:no-repeat;
+	height: 65px;
+	color:#7e7e7e;
+	font-size: 82%;
+	margin:0;
+	line-height: 100%;
+	vertical-align:bottom;
+	padding: 34px 0 0 00px;
+	}
+								
+
+table.ca th.reldocs, table.clr th.reldocs, table.ca th.user, table.clr th.user{
+	color:#7e7e7e;
+	font-size: 82%;
+	text-align:left;
+	margin:0;
+	line-height: 100%;
+	vertical-align:bottom;
+}
+
+table.ca th.score, table.clr th.score {
+	color: #cc0066;
+	font-size: 150%;
+	text-transform: uppercase;
+	vertical-align:bottom;	
+	} 
+											
+
+
+table tr td.team {
+	font-size: 120%;
+	color: #cc0066;
+	padding: 0 0 0 10px;
+}
+
+table tr td.referee {
+	font-size: 120%;
+	color: #000;
+	padding: 0 0 0 10px;}
+	
+table tr td.referee_next {
+	font-size: 100%;
+	color: #000;
+	/*font-weight:bold;*/
+	padding: 0 0 0 10px;}					
+	
+table tr td.reldocs,table tr td.user {
+	font-size: 100%;
+	font-weight:bold;
+	color: #000;
+	padding: 0 0 0 10px;
+	text-align:center;}			
+
+
+table tr td.score{
+	font-size: 120%;
+	font-weight:bold;
+	color: #cc0066;
+	padding: 0 0 0 10px;
+	text-align:center;}
+
+.team {
+        -moz-border-radius:10px 0px 0px 10px;
+}
+.score {
+        -moz-border-radius:0px 10px 10px 0px;
+}

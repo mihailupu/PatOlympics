@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/patoly_lib.js"></script>
+    <script type="text/javascript" src="js/patoly_scoreboard.js"></script>
+    <script type="text/javascript" src="js/jquery.marquee.js"></script>
+    <title>Patolympics</title>
+</head>
+<body>
+	<div id="header">
+		<div class="round">
+			<p>Round <span class="round_nr" id="scoreRound">x</span></p>
+		</div>
+		<div class="time">
+				<p>Time remaining: <span class="time_nr" id="timeRemaining">x</span> minutes</p>
+		</div>		
+	</div>
+	<div id="content">
+		<div id="clr">
+		<table class="clr">
+			<colgroup>
+   			<col width="200px">
+    		<col width="200px*">
+    		<col width="180px*">
+    		<col width="90px">
+    		<col width="90px">
+    		<col width="90px">
+  		</colgroup>
+			<tr>
+				<th class="team">Team</th>
+				<th class="referee">Referee</th>
+				<th class="referee_next">Referee next round</th>
+				<th class="reldocs">relevant documents</th>
+				<th class="user">user<br /> happiness</th>
+				<th class="score">Score</th>
+			</tr>
+			<tr class="srow">
+				<td class="team"></td>
+				<td class="referee"></td>
+				<td class="referee_next"></td>
+				<td class="reldocs"></td>
+				<td class="user"></td>
+				<td class="score"></td>
+			</tr>
+		</table>	
+	</div>
+	<div id="ca">
+		<table class="ca">
+			<colgroup>
+   			<col width="210px">
+    		<col width="210px*">
+    		<col width="180px*">
+    		<col width="90px">
+    		<col width="90px">
+    		<col width="90px">
+  		</colgroup>
+			<tr>
+				<th class="team">Team</th>
+				<th class="referee">Referee</th>
+				<th class="referee_next">Referee next round</th>
+				<th class="reldocs">relevant documents</th>
+				<th class="user">user<br /> happiness</th>
+				<th class="score">Score</th>
+			</tr>
+			<tr class="srow">
+				<td class="team"></td>
+				<td class="referee"></td>
+				<td class="referee_next"></td>
+				<td class="reldocs"></td>
+				<td class="user"></td>
+				<td class="score"></td>
+			</tr>
+				
+  	  </table>	
+	</div>
+        <marquee id="sbTicker" scrollamount="1"></marquee>
+
+	</div>	
+</body>
+</html>	
+	
+	

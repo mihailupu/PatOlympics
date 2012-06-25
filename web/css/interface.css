@@ -1,0 +1,307 @@
+html, body, #main {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0; padding:0px;
+  /*height:100%;*/
+}
+
+a {text-decoration:none;}
+
+#loginError {
+  color:#c02;
+}
+
+.button {
+  cursor:pointer;
+  width:-moz-fit-content;
+  display:block-inline;
+  padding: 0.2em 0.4em;
+  background:#999;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#FFF;
+  -moz-box-shadow:1px 2px 10px #ccc;
+  -moz-border-radius: 5px;
+  background: -moz-linear-gradient(top, #ddd, #999);
+  background: -moz-linear-gradient(top, #d17, #a03);
+  margin:0.2em 0em;
+}
+.button:hover {
+  cursor:pointer;
+  background: -moz-linear-gradient(top, #ccc, #888);
+  background: -moz-linear-gradient(top, #cc0066, #800);
+}
+.button:active {
+  background: -moz-linear-gradient(top, #aaa, #666);
+  background: -moz-linear-gradient(top, #bb0055, #000);
+}
+
+.sortButton {
+  -moz-border-radius: 5px;
+  cursor:pointer;
+  width:-moz-fit-content;
+  display:block-inline;
+  background:#ddd;
+  margin:0.2em 0em;
+  padding: 0.2em 0.4em;
+  font-size:78%;
+}
+
+.sortButton:hover {
+  cursor:pointer;
+  background:#ccc;
+}
+
+#sblink {
+  background:#ccc;
+  background: -moz-linear-gradient(top, #ddd, #999);
+  color:#FFF;
+  -moz-border-radius:5px;
+  padding:0.2em 0.4em;
+  margin:0.2em 0;
+  display:inline-block;
+  font-weight:bold;
+  text-transform:uppercase;
+  position:absolute;
+  right:110px;
+  top:20px;
+  -moz-box-shadow:1px 2px 5px #ccc;
+}
+#sblink:hover {
+  background: -moz-linear-gradient(top, #ccc, #888);
+}
+
+#topic {
+  border:none !important;
+  -moz-box-shadow:none !important;
+  padding:5px 0 3px 0 !important;
+  background:none !important;
+}
+
+.topicButton {
+  display:block-inline;
+  background:#ccc;
+  background: -moz-linear-gradient(top, #ddd, #999);
+  color:#FFF;
+  border:1px solid #999;
+  cursor:pointer;
+  padding:0.2em 2em;
+  margin:0 0.6em 0 0;
+  -moz-border-radius:5px;
+  font-weight:bold;
+  text-transform:uppercase;
+  -moz-box-shadow:1px 1px 5px #ccc;
+  font-size:88%;
+  white-space:nowrap;
+}
+.topicButton:hover {
+  background: -moz-linear-gradient(top, #ccc, #888);
+}
+.topicButton:active {
+  background: -moz-linear-gradient(top, #c06, #800);
+}
+.topicButton.active {
+  border:1px solid #800;
+  background: -moz-linear-gradient(top, #c06, #800);
+}
+
+
+#logoutButton {
+  position:absolute;
+  right:20px;
+  top:20px;
+}
+
+#loginsb{
+background:none repeat scroll 0 0 #FFFFFF;
+margin:1em auto;
+padding:0em;
+text-align:center;
+}
+#loginsb a {
+-moz-border-radius:10px;
+background:-moz-linear-gradient(center top , #ccc, #999) repeat scroll 0 0 transparent;
+display:inline-block;
+padding:0.5em 0;
+width:536px;
+}
+#loginsb a:hover {
+  background:-moz-linear-gradient(center top , #bbb, #777) repeat scroll 0 0 transparent;
+}
+#loginsb a:active {
+  background:-moz-linear-gradient(center top , #999, #444) repeat scroll 0 0 transparent;
+}
+
+.input {
+  -moz-border-radius: 5px;
+  background: -moz-linear-gradient(top, #eee, #fff);
+  padding:0.2em 0.3em;
+  margin:0.2em 0.5em 1em 0.5em;
+  border:1px solid #ccc;
+}
+.input:focus {
+  -moz-box-shadow:0px 0px 7px #ccc;
+}
+
+#inputButtons {
+  margin-top:4px;
+}
+
+#doclistInput {
+  -moz-border-radius: 5px;
+  background: #fff);
+  padding:0.2em 0.3em;
+  border:1px solid #ccc;
+  width:96%;
+  height:420px;
+}
+#doclistInput:focus {
+  -moz-box-shadow:0px 0px 7px #ccc;
+}
+#doclistMessage, #doclistMessageRight {
+  color:#CC0066;
+  display:inline-block;
+  font-weight:bold;
+  margin-right:1em;
+  margin-top:0.5em;
+}
+#doclistMessageRight {
+  float:right;
+  margin-top:-1.7em;
+}
+#doclistMessageVerbose {
+  color:#666;
+  display:inline-block;
+  margin-top:1em;
+}
+
+#doclistListing {
+  display:table;
+  width:100%;
+  table-layout:fixed;
+  border-collapse:collapse;
+}
+.doclistItem {
+  display:table-row;
+  background:-moz-linear-gradient(center top , #eee, #ddd);
+}
+.doclistItem:nth-child(odd) {
+  background:-moz-linear-gradient(center top , #ccc, #bbb);
+}
+.doclistItem:hover {
+}
+
+.newItem {
+  font-weight:bold;
+}
+
+.doclistItem span {
+  display:table-cell;
+  font-size:88%;
+  padding:3px 5px;
+  border:1px solid #eee;
+}
+.doclistItem span.button {
+  width:0.7em;
+  -moz-border-radius:0px;
+  -moz-box-shadow:none;
+}
+.doclistItemTitle{}
+.doclistItemId {width:10em;}
+.doclistItemDate {width:7em;}
+
+#doclistWrap {
+  height:580px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  margin-top:1em;
+  border:1px solid #ccc;
+  padding:0.5em;
+  background:#fff;
+  -moz-box-shadow: inset 1px 1px 7px #ddd;
+}
+
+#loginwrap {
+-moz-border-radius:15px 15px 15px 15px;
+-moz-box-shadow:1px 1px 15px #CCCCCC;
+background:none repeat scroll 0 0 #FFFFFF;
+border:1px solid #CCCCCC;
+margin:3em auto 0;
+padding:20px;
+text-align:center;
+width:500px;
+}
+
+#loginwrap .button {
+  margin:0 auto;
+}
+
+#logo, #loginStatus, #timer, #test {
+  float:left;
+  margin-right:1em;
+}
+
+#loginStatus {
+  font-size:24px;
+  padding-top:45px;
+-moz-border-radius:5px 5px 5px 5px;
+-moz-box-shadow:1px 2px 2px #CCC;
+background:none repeat scroll 0 0 #FFF;
+border:1px solid #CCC;
+font-size:24px;
+margin-top:39px;
+margin-left:60px;
+padding:5px 10px;
+text-shadow:1px 1px 2px #AAA;
+}
+#timer, #test {
+  font-size:16px;
+  margin-top:50px;
+}
+
+#main {
+  width:100%;
+  border-spacing:10px;
+  margin:0;
+}
+#main td {
+  vertical-align:top;
+  border:1px solid #ccc;
+  padding:10px; background:#EEE;
+  -moz-box-shadow:1px 2px 5px #ccc;
+}
+
+#header {
+  height:70px;
+  background:url("/PatOlympics/img/team-back.png") no-repeat scroll 110px 3px #EEEEEE !important;
+  -moz-border-radius:50px 0 0 0;
+}
+#header.TEAM {background:url("/PatOlympics/img/team-back.png") no-repeat scroll 110px 3px #EEEEEE !important;}
+#header.REFEREE {background:url("/PatOlympics/img/referee-back.png") no-repeat scroll 148px 3px #EEEEEE !important;}
+
+#input {
+}
+#doclist {
+  width:50%;
+}
+
+#status {
+  height:150px;
+}
+
+#roundTopic {
+  font-size:120%;
+  font-weight:bold;
+  text-shadow:1px 2px 2px #ccc;
+  color:#c06;
+  margin-bottom:1em;
+}
+#roundTopicDescription {
+  font-size:88%;
+}
+#timeRemaining{
+  padding-top:1em;
+  font-size:150%;
+  font-weight:bold;
+  text-shadow:1px 2px 2px #ccc;
+  color:#c06;
+}

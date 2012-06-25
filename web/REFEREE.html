@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>PatOlympics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/patoly_lib.js"></script>
+<script type="text/javascript" src="js/patoly_referee.js"></script>
+<link rel="stylesheet" type="text/css" href="css/interface.css" media="screen" />
+
+</head>
+
+
+
+<body>
+
+<table id="main">
+  <tbody>
+    <tr>
+      <td colspan="2" id="header" class="REFEREE">
+       <div id="logo"><img src="img/logo-po.png" /></div>
+       <div id="loginStatus"></div>	
+       <a id="sblink" href="scoreboard.html" target="_blank">Scoreboard</a>
+       <div class="button" id="logoutButton"></div>	
+       <div id="test"></div>
+       <div id="timer"></div>
+     </td>
+    </tr>
+    <tr>
+      <td colspan="2" id="topic">
+        <div id="topicSelector"></div>
+      </td>
+    </tr>
+    <tr>
+      <td id="status">
+        <div id="roundTopic"></div>
+        <div id="roundTopicDescription"></div>
+        <div id="timeRemaining"></div>
+      </td>
+      <td id="doclist" rowspan="2">
+        <div id="doclistSort">
+          <span class="sortButton" id="DOCID">on document id</span>
+          <span class="sortButton" id="TITLE">on title</span>
+          <span class="sortButton" id="SUBMISSION_TIMESTAMP">on submission time</span>
+        </div>
+        <div id="doclistWrap">
+          <div id="doclistListing"></div>
+        </div>
+        <div id="doclistClearall" class="button">Clear list</div>
+        <div id="doclistMessageRight"></div>
+      </td>
+    </tr>
+    <tr>
+      <td id="input">
+        <div id="inputArea">
+          <textarea class="submitDocuments" cols=80 rows=10 id="doclistInput"></textarea>
+          <div id="inputButtons">
+            <span class="button" id="doclistSubmit">submit</span>
+            <span class="button" id="doclistClear">clear</span>
+          </div>
+        </div>
+        <div id="doclistMessage"></div>
+        <div id="doclistMessageVerbose"></div>
+        <div id="inputStatus"></div>
+        <div id="inputValid"></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

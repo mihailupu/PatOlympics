@@ -1,0 +1,68 @@
+<#import "home.html" as com>
+<#escape x as x?html>
+<@com.page title="ROUNDS">
+<script src="../js/round.js" type="text/javascript"></script>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <th colspan="2" align="center">Add new round</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td><input type="text" name="name" id="name"></td>
+  </tr>
+  <tr>
+    <td>Time start</td>
+    <td><input type="text" name="starttime" id="starttime" onchange="updateEndtime()">
+	</td>
+  </tr>
+  <tr>
+    <td>Time end</td>
+    <td><input type="text" name="endtime" id="endtime"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input class="button" type="button" name="AddNew" id="AddNew" value="Add new" onclick="add();"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <th>List Rounds</th>
+  </tr>
+  <tr>
+    <td><select name="listItems" size="10" id="listItems">
+    </select>
+	<br/> <div class="textNote">Round name/Start time - End time</div>
+	</td>
+  </tr>
+  <tr>
+    <td><input class="button" type="button" name="EditButton" id="EditButton" value="Edit" onclick="edit();">
+    <input class="button" type="button" name="DeleteButton" id="DeleteButton" value="Delete" onclick="del();"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td align="center">Status</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="4">
+      <tr>
+        <td>Current Round</td>
+        <td><input name="currentRound" type="text" id="currentRound" size="70"></td>
+      </tr>
+      <tr>
+        <td>Next Round</td>
+        <td><input name="nextRound" type="text" id="nextRound" size="70"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center">
+    	<input type="button" name="DeleteActive2" id="DeleteActive2" value="Update Status"></td>
+  </tr>
+</table>
+</@com.page>
+
+</#escape>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<DBConnection>			
+			<sql_user>pat</sql_user>
+			<sql_pass>patolympics</sql_pass>
+			<sql_host>localhost</sql_host>
+			<sql_port>3306</sql_port>
+			<sql_dbname>pat</sql_dbname>			
+	</DBConnection>
+</config>

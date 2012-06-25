@@ -1,0 +1,43 @@
+<#import "home.html" as com>
+<#escape x as x?html>
+<@com.page title="SPORTS">
+<script src="../js/sport.js" type="text/javascript"></script>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>Add Sport</td>
+    <td><input type="text" name="sportName" id="sportName"> <input name="active" type="checkbox" id="active" value="1" checked>
+      active</td>
+    <td><input class="button" type="button" name="AddNew" id="AddNew" value="Add new" onclick="add();"></td>
+  </tr>
+</table>
+<br/>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <th>List Avtive Sports</th>
+    <th>&nbsp;</th>
+    <th>List Unactive Sports</th>
+  </tr>
+  <tr>
+    <td><select name="activeSports" size="10" id="activeSports">
+    </select></td>
+    <td><input class="button" type="button" name="UnactiveBT" id="UnactiveBT" value="Unactive &gt;&gt;" onclick="moveItems(document.getElementById('activeSports'),document.getElementById('inactiveSports'),0)">
+      <br>
+      <br>
+    <input class="button" type="button" name="ActiveBT" id="ActiveBT" value="&lt;&lt; Active" onclick="moveItems(document.getElementById('inactiveSports'),document.getElementById('activeSports'),1)"></td>
+    <td><select name="inactiveSports" size="10" id="inactiveSports">
+    </select></td>
+  </tr>
+  <tr>
+    <td>
+    	<input class="button" type="button" name="EditButton" id="EditButton" value="Edit" onclick="edit(1);">
+		<input class="button" type="button" name="DeleteActive" id="DeleteActive" value="Delete" onclick="del(1);">
+	</td>
+    <td>&nbsp;</td>
+    <td>
+    	<input class="button" type="button" name="EditButton2" id="EditButton2" value="Edit" onclick="edit(0);">
+    	<input class="button" type="button" name="DeleteUnactive" id="DeleteUnactive" value="Delete" onclick="del(0);"></td>
+  </tr>
+</table>
+</@com.page>
+
+</#escape>

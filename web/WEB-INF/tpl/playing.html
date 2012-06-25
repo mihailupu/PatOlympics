@@ -1,0 +1,54 @@
+<#import "home.html" as com>
+<#escape x as x?html>
+<@com.page title="PLAYING">
+<script src="../js/playing.js" type="text/javascript"></script>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td>Select Sport</td>
+    <td><select name="listSports" id="listSports" onchange="get(); getTeam();">
+    </select></td>
+  </tr>
+  <tr>
+    <td>Select Round</td>
+    <td><select name="listRounds" id="listRounds" onchange="getTeam(); getExpert();">
+    </select></td>
+  </tr>
+  <tr>
+    <td>Select Expert</td>
+    <td><select name="listExperts" id="listExperts"  onchange="getTopic();">
+    </select></td>
+  </tr>
+  <tr>
+    <td>Select Topic</td>
+    <td><select name="listTopics" id="listTopics" onchange="getTeam();">
+    </select></td>
+  </tr>
+  <tr>
+    <td>Select Team</td>
+    <td><select name="listTeams" id="listTeams">
+    </select></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input class="button" type="button" name="AddPlaying" id="AddPlaying" value="Add to Game" onclick="add();"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <th>List Playing of Sport: <strong><span id="sport_title"></span></strong></th>
+  </tr>
+  <tr>
+    <td><select name="listItems" size="10" id="listItems">
+    </select>
+	<br/> <div class="textNote">Round/Topic/Expert/Team</div>
+	</td>
+  </tr>
+  <tr>
+    <td><input class="button" type="button" name="DeleteButton" id="DeleteButton" value="Remove" onclick="del();"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</@com.page>
+
+</#escape>
